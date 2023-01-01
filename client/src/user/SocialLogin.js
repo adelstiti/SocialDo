@@ -71,7 +71,7 @@ const SocialLogin = () => {
 
                 
                 <FacebookLogin
-                    appId="2406354233013519"
+                    appId={`${process.env.REACT_APP_FACEBOOK_ID}`}
                     fields="name,email,picture"
                     textButton="Login with Facebook"
                     callback={responseFacebook} 
